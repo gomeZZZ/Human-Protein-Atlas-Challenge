@@ -1,9 +1,15 @@
+import numpy as np
+
 def f1_score(labels,predictions,num_classes=28):
-    """ Computes mean f1_score for a batch of labels and predictions in binary encoding [0,1,0...] for each class
+    """ Computes mean f1_score for a batch of labels and predictions 
+    in binary encoding [0,1,0...] for each class
     """
     f1 = 0
-    # print(labels)
-    # print(predictions)
+    # print(np.sum(np.logical_or(labels,predictions)))
+    # for i in range(labels.shape[0]):
+    #     print(labels[i].astype(np.uint8))
+    #     print(predictions[i].astype(np.uint8))
+
     for i in range(labels.shape[0]):
         label = labels[i]
         pred = predictions[i]
@@ -16,11 +22,11 @@ def f1_score(labels,predictions,num_classes=28):
                 fp+=1
             elif label[j] == 1 and pred[j] == 0: #False Negative
                 fn+=1
-            
+        
         if tp+fp == 0: #if no positives, all were correct
             precision = 1
         else:
-            precision = tp / (tp + fp) 
+            precision = tp / (tp + fp)
             
         if tp + fn == 0: #if no relevant cases, we hit them all
             recall = 1
