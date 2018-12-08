@@ -1,0 +1,8 @@
+- Plot class accuracy
+- Display confusion matrix
+- Reshuffle training / validation data (it has some order...-.-)
+- Add Test time augmentation
+- Add LR scheduling
+- Test more than POI images for training
+- Add data augmentations
+- Oversample/Undersample data depending on frequency
