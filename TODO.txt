@@ -1,8 +1,11 @@
-- Plot class accuracy
-- Display confusion matrix
-- Reshuffle training / validation data (it has some order...-.-)
-- Add Test time augmentation
-- Add LR scheduling
-- Test more than POI images for training
-- Add data augmentations
-- Oversample/Undersample data depending on frequency
+- Load external data [https://www.kaggle.com/artemtprv/load-external-data ](anki)
+- Plot class accuracy (anki)
+- Display confusion matrix (anki)
+- Switch to big images (pablo)																DONE
+- Add Test time augmentation (pablo)
+- Add LR scheduling (pablo)																	DONE
+- Class based thresholding (pablo)
+- Unfreezing model at some point (pablo)
+- Gradient clipping (pablo)
+- Z scoring per channel (pablo)																DONE
+- Ensemble Models?
