@@ -5,7 +5,7 @@
 - Add Test time augmentation (pablo)
 - Add LR scheduling (pablo)																	DONE
 - Class based thresholding (pablo)
-- Unfreezing model at some point (pablo)
+- Unfreezing model at some point (pablo)													DONE
 - Gradient clipping (pablo)
 - Z scoring per channel (pablo)																DONE
 - Ensemble Models?
